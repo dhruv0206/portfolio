@@ -41,11 +41,11 @@ export function FloatingDockDemo() {
 
   return (
     <div className="flex items-center justify-center w-full mt-10">
-      <span className="relative z-10 text-white font-bold text-2xl left-10 pb-3">
+      <span className="relative z-10 text-white font-bold text-2xl left-10 pb-3 hidden md:block">
         DP
       </span>
       <FloatingDock
-        mobileClassName="translate-y-20" // only for demo, remove for production
+        // mobileClassName="translate-y-10" // only for demo, remove for production
         items={links}
       />
     </div>
