@@ -2,8 +2,16 @@
 import React from "react";
 import { IconHome, IconMessage, IconUser } from "@tabler/icons-react";
 import { FloatingNav } from "./ui/floating-navbar";
+import { ReactNode } from "react";
+
+type NavItem = {
+  name: string;
+  link: string;
+  icon?: ReactNode;
+};
+
 export function FloatingNavDemo() {
-  const navItems = [
+  const navItems: NavItem[] = [
     {
       name: "Home",
       link: "/",
@@ -39,3 +47,5 @@ const DummyContent = () => {
     </div>
   );
 };
+
+export type { NavItem };

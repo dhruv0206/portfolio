@@ -77,9 +77,11 @@ export const ModalBody = ({
     }
   }, [open]);
 
-  const modalRef = useRef(null);
+  const modalRef = useRef<HTMLDivElement>(null);
   const { setOpen } = useModal();
-  useOutsideClick(modalRef, () => setOpen(false));
+  useOutsideClick(modalRef as React.RefObject<HTMLDivElement>, () =>
+    setOpen(false)
+  );
 
   return (
     <AnimatePresence>
@@ -224,9 +226,10 @@ export const useOutsideClick = (
   callback: (event: MouseEvent | TouchEvent) => void
 ) => {
   useEffect(() => {
-    const listener = (event: any) => {
+    const listener = (event: MouseEvent | TouchEvent) => {
+      const target = event.target as Node;
       // DO NOTHING if the element being clicked is the target element or their children
-      if (!ref.current || ref.current.contains(event.target)) {
+      if (!ref.current || ref.current.contains(target)) {
         return;
       }
       callback(event);

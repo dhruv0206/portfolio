@@ -87,7 +87,7 @@ export const InfiniteMovingCards = ({
           pauseOnHover && "hover:[animation-play-state:paused]"
         )}
       >
-        {items.map((item, idx) => (
+        {items.map((item) => (
           <li key={item.name}>
             <MagicCard className="w-40 h-40 flex justify-center items-center">
               <div>
