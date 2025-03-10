@@ -1,13 +1,7 @@
-import React from "react";
 import { FloatingDock } from "@/components/ui/floating-dock";
 import {
-  IconBrandGithub,
   IconBrandDiscord,
-  IconBrandX,
-  IconExchange,
-  IconHome,
-  IconNewSection,
-  IconTerminal2,
+  IconBrandGithub,
   IconBrandLinkedinFilled,
   IconFileCvFilled,
 } from "@tabler/icons-react";

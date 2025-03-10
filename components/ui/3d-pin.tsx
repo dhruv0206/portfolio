@@ -1,9 +1,7 @@
 "use client";
-import React, { useState } from "react";
-import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
-import Link from "next/link";
-import { Button } from "./button";
+import { motion } from "framer-motion";
+import React, { useState } from "react";
 import { ModalTrigger } from "./animated-modal";
 
 export const PinContainer = ({
@@ -63,7 +61,6 @@ export const PinContainer = ({
 
 export const PinPerspective = ({
   title,
-  href,
 }: {
   title?: string;
   href?: string;

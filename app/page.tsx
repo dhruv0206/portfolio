@@ -3,15 +3,11 @@ import ContactMe from "@/components/contact-me";
 import { FloatingDockDemo } from "@/components/floating-dock-demo";
 import { Skills } from "@/components/infinite-moving-cards-demo";
 import { Particles } from "@/components/magicui/particles";
-import { ShimmerButton } from "@/components/magicui/shimmer-button";
-import { ShinyButton } from "@/components/magicui/shiny-button";
 import { TypingAnimation } from "@/components/magicui/typing-animation";
 import { Projects } from "@/components/Projects";
-import { ShootingStarsAndStarsBackgroundDemo } from "@/components/start-demo";
 import { TimelineDemo } from "@/components/timeline-demo";
 import { HoverBorderGradient } from "@/components/ui/hover-border-gradient";
 import { handleOpenPdf } from "@/lib/utils";
-import { MoveDown } from "lucide-react";
 
 export default function Home() {
   const scrollToNextSection = () => {

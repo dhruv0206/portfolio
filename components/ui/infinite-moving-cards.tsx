@@ -1,10 +1,9 @@
 "use client";
 
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import { MagicCard } from "../magicui/magic-card";
-import Image from "next/image";
-import Link from "next/link";
 
 export const InfiniteMovingCards = ({
   items,
