@@ -136,29 +136,32 @@ export function TimelineDemo() {
       img_src: "/images/actonate_logo.jpeg",
     },
     {
-      title: "Sept 2024 - Dec 2024",
+      title: "Dec 2020 - April 2021",
       content: (
         <div>
           <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-xl font-bold">
-            Eden (Formerly CareWallet)
+            Redink EdTech Solutions
           </p>
           <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-5">
             Software Engineer
           </p>
           <ul className="list-disc ml-8 w-4/5">
             <li className="text-left text-justify">
-              Developed RESTful APIs with Node.js, DynamoDB, and React, cutting
-              patient-doctor admin tasks by 60%.
+              Built a React-based teacher dashboard for a multi-tenant web app,
+              enabling real-time tracking of 12,000+ students grades,
+              attendance, and performance metrics across 8+ schools, improving
+              reporting efficiency by 30%.
             </li>
             <li className="text-left text-justify">
-              Implemented a CI/CD pipeline with GitHub Actions, AWS Lambda, API
-              Gateway, and CloudWatch, automating deployments to reduce time by
-              70% and enhance reliability by streamlining workflows.
+              Orchestrated the development of a grading system using Node.js and
+              ReactJS, enabling personalized feedback on submissions, boosting
+              grading efficiency by 30% and reducing grading time by 20%.
             </li>
             <li className="text-left text-justify">
-              Developed 10+ dynamic pages using React and Next.js, reducing load
-              time by 30% and improving development efficiency by 40% through
-              reusable components and optimized rendering.
+              Engineered an assessment system comprising a React web app and a
+              React Native cross-platform mobile app, enabling students to take
+              online exams with diverse question types, supporting 100+ exams
+              and boosting platform activity by 25%.
             </li>
           </ul>
         </div>
