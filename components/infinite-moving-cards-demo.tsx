@@ -6,7 +6,7 @@ export function Skills() {
   return (
     // <div className="max-w-7xl mx-auto py-10 px-4 rounded-2xl flex flex-col antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
     <div className="py-10 flex flex-col antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
-      <div className="mb-5 text-lg md:text-4xl">Skills</div>
+      <div className="mb-5 text-2xl font-bold md:text-4xl">Skills</div>
       <InfiniteMovingCards
         items={testimonials}
         direction="right"

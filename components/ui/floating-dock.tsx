@@ -5,7 +5,7 @@
  **/
 "use client";
 
-import { cn } from "@/lib/utils";
+import { cn, handleOpenPdf } from "@/lib/utils";
 // import { IconLayoutNavbarCollapse } from "@tabler/icons-react";
 import {
   AnimatePresence,
@@ -172,7 +172,13 @@ function IconContainer({
   const [hovered, setHovered] = useState(false);
 
   return (
-    <Link href={href}>
+    <Link
+      href={href}
+      onClick={(e) => {
+        e.preventDefault();
+        handleOpenPdf(href);
+      }}
+    >
       <motion.div
         ref={ref}
         style={{ width, height }}

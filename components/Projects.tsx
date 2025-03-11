@@ -92,10 +92,10 @@ const projectsData = [
 export function Projects() {
   return (
     <div className="py-10 w-full flex flex-col items-center justify-center max-w-7xl mx-auto">
-      <h2 className="text-lg mb-10 md:text-4xl text-black dark:text-white max-w-4xl">
+      <h2 className="text-2xl font-bold md:text-4xl mb-10 text-black dark:text-white max-w-4xl">
         Projects
       </h2>
-      <div className="grid grid-cols-3 gap-x-4 gap-y-20">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-x-4 gap-y-20">
         {projectsData &&
           projectsData.map((project) => (
             <Modal key={project.id}>
@@ -133,9 +133,9 @@ export function Projects() {
                 </div>
               </PinContainer>
               <ModalBody>
-                <ModalContent>
+                <ModalContent className="overflow-y-auto">
                   <div className="mb-5 flex items-center flex-wrap gap-x-5 gap-y-2">
-                    <h5 className="text-xl text-neutral-600 dark:text-neutral-100 font-semibold">
+                    <h5 className="text-md md:text-xl text-neutral-600 dark:text-neutral-100 font-semibold">
                       {project.name}
                     </h5>
                     <div className="flex gap-4 items-center ">
@@ -165,7 +165,7 @@ export function Projects() {
                         alt="bali images"
                         width="500"
                         height="500"
-                        className="rounded-lg h-36 w-36 md:h-40 md:w-40 object-cover flex-shrink-0"
+                        className="rounded-lg h-24 w-24 md:h-40 md:w-40 object-cover flex-shrink-0"
                       />
                     ))}
                   </div>

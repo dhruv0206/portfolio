@@ -12,11 +12,11 @@ export default function ContactMe() {
   };
   return (
     <div className="my-10 max-w-7xl w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-10 shadow-input bg-white dark:bg-black flex flex-col justify-center items-center">
-      <h2 className="text-lg md:text-4xl mb-8 text-black dark:text-white max-w-4xl">
+      <h2 className="text-2xl font-bold md:text-4xl mb-8 text-black dark:text-white max-w-4xl">
         Let&apos;s Connect
       </h2>
-      <div className="flex justify-center items-center space-x-12">
-        <div className="sm:hidden md:block">
+      <div className="flex justify-center items-center space-x-0 md:space-x-12">
+        <div className="hidden md:block">
           {" "}
           <Image
             src={"/images/contact_me/Image_2.jpg"}
@@ -28,26 +28,25 @@ export default function ContactMe() {
         </div>
         <div>
           <p className="text-neutral-600 text-sm max-w-sm mt-2 dark:text-neutral-300">
-            Login to aceternity if you can because we don&apos;t have a login
-            flow yet
+            Just drop me a message and I will reach out to you within 24 hours!
           </p>
 
           <form className="my-8" onSubmit={handleSubmit}>
             <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 mb-4">
               <LabelInputContainer>
                 <Label htmlFor="firstname">First name</Label>
-                <Input id="firstname" placeholder="Tyler" type="text" />
+                <Input id="firstname" placeholder="Dhruv" type="text" />
               </LabelInputContainer>
               <LabelInputContainer>
                 <Label htmlFor="lastname">Last name</Label>
-                <Input id="lastname" placeholder="Durden" type="text" />
+                <Input id="lastname" placeholder="Patel" type="text" />
               </LabelInputContainer>
             </div>
             <LabelInputContainer className="mb-4">
               <Label htmlFor="email">Email Address</Label>
               <Input
                 id="email"
-                placeholder="projectmayhem@fc.com"
+                placeholder="dhruv0128@gmail.com"
                 type="email"
               />
             </LabelInputContainer>
@@ -68,7 +67,7 @@ export default function ContactMe() {
               className="bg-gradient-to-br relative group/btn from-black dark:from-zinc-900 dark:to-zinc-900 to-neutral-600 block dark:bg-zinc-800 w-full text-white rounded-md h-10 font-medium shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset] dark:shadow-[0px_1px_0px_0px_var(--zinc-800)_inset,0px_-1px_0px_0px_var(--zinc-800)_inset]"
               type="submit"
             >
-              Sign up &rarr;
+              Send Message &rarr;
               <BottomGradient />
             </button>
 
